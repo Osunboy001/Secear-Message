@@ -1,0 +1,733 @@
+/* media.css */
+
+/* ==============================
+   LARGE TABLETS / SMALL LAPTOPS
+   ============================== */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1180px) { 
+  .wwd-services {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 1100px) { 
+.wwd-container {
+    flex-direction: column;
+    text-align: center;
+      display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wwd-services {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wwd-item p  {
+    max-width: 250px;
+      margin: 0 auto;   /* center inside the grid item */
+  line-height: 1.7; /* more spacing for readability */
+  font-size: 18px;
+  }
+}
+
+/* ==============================
+   TABLETS
+   ============================== */
+@media (max-width: 992px) {
+
+  .hero-image img {
+    width: 22rem;
+    height: auto;
+    margin-top: 80px;
+  }
+.hero-text  .slide-in-left-delayed {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+  .who-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .who-right {
+    flex-direction: row;
+  }
+
+  .who-right img {
+    width: 48%;
+  }
+
+  .counters {
+    justify-content: center;
+  }
+
+  .wwd-content {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 942px) {
+
+  .hero-image img {
+    width: 20rem;
+    height: auto;
+    margin-top: 159px;
+  }
+.hero-text .slide-in-left-delayed {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+}
+
+
+@media (max-width: 903px) {
+
+  .hero-image img {
+    width: 35rem;
+    height: auto;
+    margin-top: 100px;
+  }
+.hero-text .slide-in-left-delayed{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 29px;
+}
+}
+
+/* ==============================
+   MOBILE NAVIGATION
+   ============================== */
+
+
+
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  
+  /* Soft shadow to blend edges */
+  filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.6));
+  
+  /* Add gradient mask to fade edges */
+  -webkit-mask-image: radial-gradient(ellipse 90% 85% at center, 
+    black 60%, 
+    rgba(0,0,0,0.8) 75%, 
+    transparent 100%);
+  mask-image: radial-gradient(ellipse 90% 85% at center, 
+    black 60%, 
+    rgba(0,0,0,0.8) 75%, 
+    transparent 100%);
+  
+  transition: all 0.5s ease;
+}
+
+/* Add subtle glow behind */
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(40px);
+}
+
+
+/* ========================================
+   SOLUTION 2: VIGNETTE EFFECT
+   Darkens edges like a professional portrait
+   ======================================== */
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  
+  /* Strong shadow */
+  filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.8));
+  
+  /* Vignette effect - darkens edges */
+  box-shadow: inset 0 0 150px 30px rgba(0, 0, 0, 0.4);
+  
+  transition: all 0.5s ease;
+}
+
+
+/* ========================================
+   SOLUTION 3: GRADIENT OVERLAY
+   Adds a subtle color overlay to match background tones
+   ======================================== */
+
+.hero-image {
+  position: relative;
+}
+
+/* Color overlay that matches your background */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, 
+    rgba(0, 4, 53, 0) 0%,
+    rgba(0, 4, 53, 0.2) 50%,
+    rgba(0, 4, 53, 0.4) 100%);
+  border-radius: 80px;
+  pointer-events: none;
+  z-index: 2;
+  margin-top: 80px;
+}
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.7));
+}
+
+
+/* ========================================
+   SOLUTION 4: FEATHERED EDGES
+   Makes edges soft and natural-looking
+   ======================================== */
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  
+  /* Feather the edges smoothly */
+  -webkit-mask-image: radial-gradient(ellipse 85% 90% at 50% 45%, 
+    black 40%, 
+    rgba(0,0,0,0.9) 60%,
+    rgba(0,0,0,0.5) 80%,
+    transparent 100%);
+  mask-image: radial-gradient(ellipse 85% 90% at 50% 45%, 
+    black 40%, 
+    rgba(0,0,0,0.9) 60%,
+    rgba(0,0,0,0.5) 80%,
+    transparent 100%);
+  
+  /* Enhanced shadows */
+  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.8))
+          drop-shadow(0 0 40px rgba(0, 0, 0, 0.5));
+  
+  transition: all 0.5s ease;
+}
+
+
+/* ========================================
+   SOLUTION 5: ATMOSPHERIC BLEND
+   Creates depth with multiple layered effects
+   ======================================== */
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+/* Background atmospheric glow */
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background: radial-gradient(ellipse, 
+    rgba(0, 4, 53, 0.4) 0%, 
+    rgba(0, 4, 53, 0.2) 40%,
+    transparent 70%);
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  
+  /* Soft edges with mask */
+  -webkit-mask-image: radial-gradient(ellipse 92% 88% at center, 
+    black 50%, 
+    rgba(0,0,0,0.85) 70%, 
+    rgba(0,0,0,0.3) 90%,
+    transparent 100%);
+  mask-image: radial-gradient(ellipse 92% 88% at center, 
+    black 50%, 
+    rgba(0,0,0,0.85) 70%, 
+    rgba(0,0,0,0.3) 90%,
+    transparent 100%);
+  
+  /* Multi-layer shadows for depth */
+  filter: 
+    drop-shadow(0 30px 70px rgba(0, 0, 0, 0.9))
+    drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5))
+    drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
+  
+  transition: all 0.5s ease;
+}
+
+
+/* ========================================
+   SOLUTION 6: STUDIO LIGHTING EFFECT
+   Simulates professional studio lighting
+   ======================================== */
+
+.hero-image {
+  position: relative;
+}
+
+/* Main rim light (top) */
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 40%;
+  background: radial-gradient(ellipse, 
+    rgba(255, 255, 255, 0.15) 0%, 
+    transparent 60%);
+  filter: blur(50px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Shadow depth (bottom) */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 30%;
+  background: radial-gradient(ellipse, 
+    rgba(0, 0, 0, 0.6) 0%, 
+    transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  
+  /* Soft vignette */
+  box-shadow: inset 0 0 100px 20px rgba(0, 0, 0, 0.3);
+  
+  /* Natural shadow */
+  filter: drop-shadow(0 25px 60px rgba(0, 0, 0, 0.7))
+          brightness(1.05)
+          contrast(1.05);
+}
+
+
+/* ========================================
+   SOLUTION 7: COLOR HARMONY
+   Tints the lawyer image to match background colors
+   ======================================== */
+
+.hero-image {
+  position: relative;
+}
+
+/* Color tint overlay */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+    rgba(0, 4, 53, 0.15) 0%,
+    rgba(0, 4, 53, 0.25) 100%);
+  border-radius: 80px;
+  margin-top: 80px;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  
+  /* Feathered edges */
+  -webkit-mask-image: radial-gradient(ellipse 88% 92% at center, 
+    black 55%, 
+    rgba(0,0,0,0.7) 75%, 
+    transparent 100%);
+  mask-image: radial-gradient(ellipse 88% 92% at center, 
+    black 55%, 
+    rgba(0,0,0,0.7) 75%, 
+    transparent 100%);
+  
+  filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.8));
+}
+
+
+/* ========================================
+   SOLUTION 8: PHOTOGRAPHIC INTEGRATION (BEST)
+   Combines multiple professional techniques
+   ======================================== */
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+/* Atmospheric depth layer */
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  background: radial-gradient(ellipse at 50% 40%, 
+    rgba(0, 4, 53, 0.3) 0%, 
+    rgba(0, 4, 53, 0.15) 40%,
+    transparent 70%);
+  filter: blur(50px);
+  z-index: 0;
+  animation: subtlePulse 6s ease-in-out infinite;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { 
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+.hero-image img {
+  width: 30rem;
+  max-width: 100%;
+  height: 39rem;
+  object-fit: cover;
+  margin-top: 80px;
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  
+  /* Feathered edges for natural blend */
+  -webkit-mask-image: radial-gradient(ellipse 90% 87% at 50% 42%, 
+    black 45%, 
+    rgba(0,0,0,0.95) 65%,
+    rgba(0,0,0,0.6) 82%,
+    rgba(0,0,0,0.2) 92%,
+    transparent 100%);
+  mask-image: radial-gradient(ellipse 90% 87% at 50% 42%, 
+    black 45%, 
+    rgba(0,0,0,0.95) 65%,
+    rgba(0,0,0,0.6) 82%,
+    rgba(0,0,0,0.2) 92%,
+    transparent 100%);
+  
+  /* Professional lighting */
+  filter: 
+    drop-shadow(0 30px 70px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4))
+    brightness(1.08)
+    contrast(1.08);
+  
+  /* Subtle inner shadow for depth */
+  box-shadow: inset 0 -50px 80px -20px rgba(0, 0, 0, 0.25);
+  
+  transition: all 0.6s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+  filter: 
+    drop-shadow(0 35px 80px rgba(0, 0, 0, 0.9))
+    drop-shadow(0 15px 40px rgba(0, 0, 0, 0.5))
+    brightness(1.12)
+    contrast(1.1);
+}
+
+
+/* ========================================
+   BONUS: OVERLAY GRADIENT ON HERO BACKGROUND
+   Adjust the hero overlay to better frame the lawyer
+   ======================================== */
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  /* Gradient that's darker on the sides, lighter where lawyer image is */
+  background: radial-gradient(ellipse 150% 100% at 65% 50%, 
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.85) 100%);
+  display: flex;
+  align-items: center;
+}
+
+/* Alternative linear gradient */
+.hero-overlay-linear {
+  background: linear-gradient(to right,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 40%,
+    rgba(0, 0, 0, 0.35) 65%,
+    rgba(0, 0, 0, 0.6) 100%);
+}
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .nav-links.show {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links.show a,
+  .nav-links.show button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links a:nth-child(1) { transition-delay: 0.1s; }
+  .nav-links a:nth-child(2) { transition-delay: 0.2s; }
+  .nav-links a:nth-child(3) { transition-delay: 0.3s; }
+  .nav-links a:nth-child(4) { transition-delay: 0.4s; }
+  .nav-links button        { transition-delay: 0.5s; }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wwd-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wwd-services {
+    grid-template-columns: 1fr;
+  }
+
+  .wwd-item {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+
+  .hero {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-content {
+    flex-direction: row; /* KEEP them beside each other */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-text {
+    max-width: 50%;
+  }
+
+  .hero-text .slide-in-left-delayed {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+    .hero-text  .hero-btn {
+        padding: 4px 2px;
+        font-size: 14px;
+      }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 260px;
+    height:auto;        /* VERY IMPORTANT */
+    margin-top: 0;       /* REMOVE FORCE */
+  }
+
+  .review-title {
+  color: orange;
+  font-size: 25px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.wwd-content h2 {
+  margin-bottom: 10px;
+;
+  font-size: 18px;
+
+
+
+}
+
+
+/* ==============================
+   SMALL PHONES
+   ============================== */
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-text .slide-in-left-delayed {
+    font-size: 20px;
+  }
+
+     .hero-text .hero-btn {
+        padding: 8px 0px;
+        font-size: 14px;
+      }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .who-title {
+    font-size: 28px;
+  }
+
+  .experience {
+    font-size: 22px;
+  }
+
+  .counters {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  .wwd-item {
+    text-align: center;
+  }
+
+  .social-icons img,
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-left h2 {
+    font-size: 26px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}

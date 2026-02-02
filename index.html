@@ -3,48 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SECRET MESSAGE</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
-
-  <link rel="stylesheet" href="message.css">
+  <title>Law Firm</title>
+  <link rel="stylesheet" href="D-lawweb.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 <body>
-<div class="row">
-  <div class="col s8 offset-s2">
-    <div class="messageshow hide card-panel">
-      <h1></h1>
-      <div>
-        <a href="./index.html">Create your own secret message</a>
+
+  <!-- HEADER -->
+  <header class="fade-in">
+    <div class="header-container">
+      <div class="logo slide-in-left">
+        <img src="images/logo (2).jpg" alt="Law Firm Logo">
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-item">Home</a>
+        <a href="#aboutus" class="nav-item">About Us</a>
+        <a href="#whatwedo" class="nav-item">Services</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <button class="consult-btn">Free Consultation</button>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="slide-in-left-delayed">FEEL THE REAL ART OF JUSTICE</h1>
+          <a href="#" class="hero-btn fade-in-up">Get Free Consultation</a>
+        </div>
+        <div class="hero-image">
+          <img class="slide-in-right" src="images/lawyer__2_-removebg-preview.png" alt="Justice Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="service" class="services">
+    <div class="grid">
+      <div class="grid-item reveal">
+        <img src="images/accident.png" alt="Accident">
+        <h3>Accident</h3>
+        <p>We provide comprehensive legal support for all types of accident cases, including road traffic, workplace, and personal injuries. Our team ensures that every client receives full compensation for medical bills, lost wages, and emotional distress, guiding you through every step of the claims and legal process.</p>
+      </div>
+      <div class="grid-item reveal">
+        <img src="images/kidnapping.png" alt="Kidnapping">
+        <h3>Kidnapping</h3>
+        <p>Our experienced legal team handles kidnapping and abduction cases with utmost care and professionalism. We work closely with law enforcement and private investigators to protect the rights of victims and their families, providing strategic counsel and ensuring swift legal action to bring perpetrators to justice.</p>
+      </div>
+      <div class="grid-item reveal">
+        <img src="images/thief l.png" alt="Theft">
+        <h3>Theft</h3>
+        <p>We represent clients in all criminal theft cases, from petty theft to grand larceny, focusing on defending your rights while achieving the best possible outcomes. Our approach includes thorough investigation, strong legal arguments, and personalized strategies tailored to each client's unique situation</p>
+      </div>
+      <div class="grid-item reveal">
+        <img src="images/fraud-prevention.png" alt="Fraud">
+        <h3>Fraud</h3>
+        <p>Our lawyers specialize in complex fraud and financial crimes, helping clients navigate intricate legal frameworks. We provide expert guidance on corporate fraud, identity theft, and investment scams, protecting your interests and ensuring that justice is served effectively.</p>
+      </div>
+      <div class="grid-item reveal">
+        <img src="images/family-law.png" alt="Family Law">
+        <h3>Family Law</h3>
+        <p>We provide compassionate and professional legal support for family law matters, including divorce, child custody, adoption, and spousal support. Our goal is to resolve sensitive family issues efficiently while safeguarding your rights and the well-being of all parties involved</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section id="aboutus" class="who-we-are">
+    <div class="container">
+      <div class="who-content">
+        <div class="who-left reveal">
+          <h2 class="who-title">Who We Are</h2>
+          <h3 class="experience">30 Years of Experience</h3>
+          <p class="who-text">We are a team of experienced lawyers committed to justice and excellence. Our mission is to provide top-notch legal services to individuals and businesses across multiple practice areas. We focus on strategy, dedication, and delivering results.</p>
+          <div class="counters">
+            <div class="counter-box">
+              <span class="counter" data-target="200">0</span>+
+              <p>Projects</p>
+            </div>
+            <div class="counter-box">
+              <span class="counter" data-target="1500">0</span>+
+              <p>Awards</p>
+            </div>
+          </div>
+          <a href="#" class="btn">Get More Information</a>
+        </div>
+        <div class="who-right reveal">
+          <img src="images/lawyer4.jpg" alt="Lawyer Image 1" class="top-image">
+          <img src="images/How to Know If Your Lawyer is Selling You Out_ 5 Clear Signs.jpg" alt="Lawyer Image 2" class="bottom-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section id="whatwedo" class="what-we-do">
+    <h2 class="who-titles reveal">What We Do</h2>
+    <div class="wwd-container">
+      <!-- LEFT IMAGE -->
+      <div class="wwd-image reveal">
+        <img src="images/Hand Photos - Download Free High-Quality Pictures _ Freepik.jpg" alt="Legal Services">
       </div>
 
+      <!-- RIGHT CONTENT -->
+      <div class="wwd-content">
+        <h2 class="reveal">We Offer Professional Legal Solutions</h2>
+
+        <div class="wwd-services">
+          <div class="wwd-item reveal">
+            <img src="images/accident.png" alt="Accident">
+            <h4>Accident Law</h4>
+            <p>We provide comprehensive legal support for all types of accident cases, including road traffic, workplace, and personal injuries.</p>
+          </div>
+
+          <div class="wwd-item reveal">
+            <img src="images/fraud-prevention.png" alt="Fraud">
+            <h4>Fraud Cases</h4>
+            <p>Our lawyers specialize in complex fraud and financial crimes, helping clients navigate intricate legal frameworks.</p>
+          </div>
+
+          <div class="wwd-item reveal">
+            <img src="images/kidnapping.png" alt="Kidnapping">
+            <h4>Kidnapping</h4>
+            <p>Our experienced legal team handles kidnapping and abduction cases with utmost care and professionalism.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="messageform" class="card-panel">
-      <form action="">
-        <label class="label" for="">Enter Secret Message</label>
-        <input id="message-input"  type="text">
-        <button>Create</button>
-      </form>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <h2 class="review-title reveal">What Our Clients Say</h2>
+    <div class="review-wrapper reveal">
+      <div class="review-track">
+        <div class="review-card">
+          <p>"They handled my accident case professionally and kept me informed throughout the process."</p>
+          <h4>— John D.</h4>
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review-card">
+          <p>"Very experienced lawyers. I felt confident and supported during my entire case."</p>
+          <h4>— Mary K.</h4>
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review-card">
+          <p>"Excellent legal service. They truly care about justice and their clients."</p>
+          <h4>— Samuel A.</h4>
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div id="linkform" class="card-panel hide">
-<div class="share">
-  share with your friends
-  <input id="link-input" type="text">
-</div>
-</div>
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-content">
+      <div class="contact-left reveal">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need legal advice, feel free to reach out. We are here to help you.</p>
+        <div class="contact-info">
+          <div class="info-item">
+            <img src="images/phone-call.png" alt="Phone Icon">
+            <span>+1 234 567 890</span>
+          </div>
+          <div class="info-item">
+            <img src="images/gmail.png" alt="Email Icon">
+            <span>info@lawfirm.com</span>
+          </div>
+        </div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="images/communication.png" alt="Facebook"></a>
+          <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+          <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <form class="contact-form">
+          <input id="name" type="text" placeholder="Your Name" required>
+          <input id="email" type="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-  </div>
-</div>
+  <!-- MAP -->
+  <section class="map-section reveal">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.419415184681!3d37.77492927975991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c1234567%3A0x123456789abcdef!2sLaw+Firm+Address!5e0!3m2!1sen!2sus!4v1671234567890!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col reveal">
+        <img src="images/logo (2).jpg" alt="LawFirm Logo" class="footer-logo">
+        <p>Justice You Can Trust</p>
+      </div>
+      <div class="footer-col reveal">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#whatwedo">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col reveal">
+        <h4>Contact Us</h4>
+        <p>Phone: +1 234 567 890</p>
+        <p>Email: info@lawfirm.com</p>
+        <p>Address: 123 Justice St, City, Country</p>
+      </div>
+      <div class="footer-col reveal">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <a href="#"><img src="images/communication.png" alt="Facebook"></a>
+          <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+          <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 LawFirm. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
-  
+
+   <button class="scrollup">
+  <i class="arrow-up"></i>
+ </button>
 
 
-<footer>
-  <h2>
-    @MORAKINYO IFELOUWA All right reserved
-  </h2>
-</footer>
-  <script src="index.js"></script>
+
+    <div id="myButton"></div>
+
+
+  <script src="D-lawweb.js"></script>
 </body>
 </html>
